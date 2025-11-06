@@ -25,7 +25,7 @@ body.font-lexend {
   font-family: "Lexend", sans-serif !important;
 }
 body.font-baloo {
-  font-family: "Baloo Da 2", cursive !important;
+  font-family: "Baloo Da 2", cursive;
 }
 
 /* Variação de Tamanho de Texto */
