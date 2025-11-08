@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -29,99 +29,91 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/suporte.css">
-    <link rel="stylesheet" href="../css/styles.css">
 
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="modo-claro">
-    <header class="cabecalho mb-2" role="banner">
-      <div class="container-fluid">
-        <div class="barra-cabecalho d-flex justify-content-between align-items-center">
-          
-          <!-- LADO ESQUERDO -->
-          <div class="cabecalho-esquerda d-flex align-items-center gap-3">
-
-            <!-- Botão hamburguer (visível só no mobile) -->
-            <button class="botao-icone d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-label="Abrir menu">
-              <i class="fas fa-bars icone" aria-hidden="true"></i>
-            </button>
-
-            <!-- Navegação principal -->
-            <nav class="navegacao collapse d-lg-block" id="menuPrincipal" aria-label="Navegação principal">
-              <ul class="lista-navegacao d-flex flex-column flex-lg-row gap-3 m-0 p-0">
-                <li><a class="fs-5 fw-bold px-2 py-2 text-decoration-none link-navegacao-ativo" href="../index.html">Home</a></li>
-                <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Loja</a></li>
-                <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Biblioteca</a></li>
-                <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Fórum</a></li>
-                <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Suporte</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <!-- LADO DIREITO -->
-          <div class="cabecalho-direita d-flex align-items-center gap-3">
-            <button class="bg-transparent botao-icone" aria-label="Notificações">
-              <img class="icone" src="../assets/page/notification.png" alt="" aria-hidden="true">
-            </button>
-
-            <button class=" bg-transparent botao-icone" aria-label="Atalhos">
-              <img class=" bg-transparent icone" src="../assets/page/userfoto.png" alt="" aria-hidden="true">
-            </button>
-
-            <span class="usuario d-none d-md-flex align-items-center bg-transparent">
-              <span class="bg-transparent usuario-nome">NomeDeUsuario</span>
-            </span>
-
-            <button class=" bg-transparent botao-icone" aria-label="Mais opções">
-              <img class=" icone" src="../assets/LogoOficial.png" alt="" aria-hidden="true">
-            </button>
-          </div>
+<body class="modo-escuro">
+    <header id="topo">
+        <div class="container">
+            <h1 class="fs-3">Suporte</h1>
         </div>
-      </div>
     </header>
 
     <main>
         <section class="container d-flex flex-column align-items-center">
-            <h2 class="text-center fs-4 fw-bold text">Precisa de ajuda? Fale conosco ou acompanhe seus chamados.</h2>
+            <h2 id="h2-principal" class="text-center fs-4 text">Precisa de ajuda? Fale conosco ou acompanhe seus chamados.</h2>
             <button id="cta-chamado">Criar chamado</button>
         </section>
 
         <section class="container d-flex flex-column align-items-center">
+            <div id="ajustar-tabela">
             <table>
                 <tr>
                     <th>Protocolo</th>
                     <th>Assunto</th>
                     <th>Criado em</th>
-                    <th>Status</th>
+                    <th>Finalizado em</th>
+                    <th class="pe-0">Status</th>
                 </tr>
 
                 <tr>
                     <td>48291</td>
                     <td>Erro ao carregar o jogo</td>
                     <td>19/10/2025 às 09:03</td>
-                    <td>Em andamento</td>
+                    <td>-</td>
+                    <td class="ultima-coluna">Em andamento</td>
                 </tr>
+
+                <tr>
+                    <td>48291</td>
+                    <td>Problemas no login da conta</td>
+                    <td>19/10/2025 às 09:03</td>
+                    <td>-</td>
+                    <td class="ultima-coluna">Em andamento</td>
+                </tr>
+
+                <tr>
+                    <td>48291</td>
+                    <td>Pagamento não confirmado</td>
+                    <td>19/10/2025 às 09:03</td>
+                    <td>-</td>
+                    <td class="ultima-coluna">Em andamento</td>
+                </tr>
+
+                <tr>
+                    <td>48291</td>
+                    <td>Sugestão de nova funcionalidade</td>
+                    <td>19/10/2025 às 09:03</td>
+                    <td>19/10/2025 às 09:03</td>
+                    <td class="ultima-coluna">Finalizado</td>
+                </tr>
+
+               
             </table>
+            </div>
         </section>
 
-        <section class="container d-flex flex-column align-items-start gap-2 mt-5">
-            <h2 class="fs-6 fw-bold text">Contatos de suporte</h2>
-            <div id="canais-suporte">
-                <div>
+        <section id="section_contatos">
+            <div id="container-suporte" class="container d-flex align-items-center flex-column">
+            <h2 class="fs-5 text">Nossos canais de suporte</h2>
+            <div id="canais-suporte" class="d-flex flex-wrap gap-3 justify-content-center">
+                <div class="d-flex align-items-center gap-1">
                     <i class="fa-regular fa-envelope"></i>
                      <span class="text-decoration-underline">iaragames.suporte@gmail.com</span>
                 </div>
-                <div><i class="fa-solid fa-mobile-screen-button"></i>
-                    <span>(19) 98562-2420</span></div>
-                <div>
+                <div class="d-flex align-items-center gap-1"><i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>(19) 98562-2420</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
                     <i class="fa-brands fa-whatsapp"></i>
                     <span>(19) 98562-2420</span></div>
+            </div>
             </div>
         </section>
     </main>
 
-<footer class="pt-5 mt-3 rodape" role="contentinfo">
+    <footer class="pt-5 mt-3 rodape" role="contentinfo">
 
         <div class="container">
           <div class="row gy-4 text-center justify-content-center">
@@ -158,9 +150,9 @@
             <div class="col-6 col-md-2">
               <h6 class="text-uppercase small mb-3 texto-footer">Suporte</h6>
               <ul class="list-unstyled mb-0">
-                <li><a class="link-opacity-75-hover link" href="/ajuda">Ajuda</a></li>
-                <li><a class="link-opacity-75-hover link" href="/faq">FAQ</a></li>
-                <li><a class="link-opacity-75-hover link" href="/contato">Contato</a></li>
+                <li><a class="link-opacity-75-hover link" href="./pages/suporte.html">Ajuda</a></li>
+                <li><a class="link-opacity-75-hover link" href="./pages/suporte.html">FAQ</a></li>
+                <li><a class="link-opacity-75-hover link" href="./pages/suporte.html">Contato</a></li>
               </ul>
             </div>
           </div>
