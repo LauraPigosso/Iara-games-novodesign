@@ -33,18 +33,18 @@
             <!-- Navegação principal -->
             <nav class="navegacao collapse d-lg-block" id="menuPrincipal" aria-label="Navegação principal">
               <ul class="lista-navegacao d-flex flex-column flex-lg-row gap-3 m-0 p-0">
-                <li><a class="fs-5 fw-bold px-2 py-2 text-decoration-none link-navegacao-ativo" href="#">Home</a></li>
+                <li><a class="fs-5 fw-bold px-2 py-2 text-decoration-none link-navegacao-ativo" href="index.html">Home</a></li>
                 <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Loja</a></li>
                 <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Biblioteca</a></li>
                 <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Fórum</a></li>
-                <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="#">Suporte</a></li>
+                <li><a class=" d-inline-block px-2 py-2 rounded-2 text-decoration-none link-navegacao" href="./pages/suporte.html">Suporte</a></li>
               </ul>
             </nav>
           </div>
 
           <!-- LADO DIREITO -->
           <div class="cabecalho-direita d-flex align-items-center gap-3">
-            <button class="botao-icone" aria-label="Notificações">
+            <button class="bg-transparent botao-icone" aria-label="Notificações">
               <img class="icone" src="./assets/page/notification.png" alt="" aria-hidden="true">
             </button>
 
@@ -68,7 +68,7 @@
     <main class="container">
       <!-- Banner do Festival -->
       <section class="banner-festival" aria-labelledby="titulo-festival">
-        <img src="assets/page/banner_festival.png" alt="Banner do Festival Iara Games de Verão" class="imagem-banner-fundo" />
+        <img src="assets/page/Banner-promo.png" alt="Banner do Festival Iara Games de Verão" class="imagem-banner-fundo" />
         <div class="conteudo-festival">
           <h2 id="titulo-festival" class="logo-festival">Iara Games de Verão</h2>
           <p class="datas-festival">22 de Setembro</p>
@@ -85,7 +85,7 @@
         />
 
         <div class="conteudo-deck text-white fw-bold">
-          <h2 id="titulo-deck" class="display-6 mb-1">Jogue no Iara Deck.</h2>
+          <h2 id="titulo-deck" class="display-6 mb-1 titulo-deck">Jogue no Iara Deck.</h2>
           <p class="fs-5 mb-0">Curta sua biblioteca Iara Games em qualquer lugar com o portátil gamer.</p>
         </div>
       </section>
@@ -318,10 +318,69 @@
                 <span class="fw-bold text-success">R$ 149,50</span>
               </div>
             </div>
-
           </article>
 
-          <!-- Repita para outros cards -->
+          <article class="card-lista d-flex flex-column flex-md-row align-items-center justify-content-between text-decoration-none px-3 py-2 rounded-2"
+            tabindex="0" role="link" aria-label="Call Of Duty: Modern Warfare II - abrir página do jogo">
+            
+            <img src="assets/games/euro_truck_simulator_2/euro_truck_simulator_2_capsule.jpg"
+              class="img-fluid rounded-1 mb-2 mb-md-0 me-md-3 imagem-lista" />
+            
+            <div class="detalhes-lista flex-grow-1 text-center text-md-start px-md-3">
+              <h3 class="fs-5 fw-semibold mb-1 nome-jogo">Euro Truck Simulator 2</h3>
+              <p class="small mb-1 descricao-lista">Simulação, Condução, Relaxante, Mundo Aberto</p>
+              <span class="badge bg-secondary col-xl-4 ">Windows, Mac, Linux</span>
+            </div>
+            <div class="text-center text-md-end mt-2 mt-md-0">
+              <span class="badge bg-success mb-1">-75%</span>
+              <div>
+                <span class="text-decoration-line-through small d-block preco-original">R$ 39,99</span>
+                <span class="fw-bold text-success">R$ 9,99</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-lista d-flex flex-column flex-md-row align-items-center justify-content-between text-decoration-none px-3 py-2 rounded-2"
+            tabindex="0" role="link" aria-label="fallout_76 - abrir página do jogo">
+            
+            <img src="assets/games/fallout_76/fallout_76_capsule.jpg"
+              class="img-fluid rounded-1 mb-2 mb-md-0 me-md-3 imagem-lista" />
+            
+            <div class="detalhes-lista flex-grow-1 text-center text-md-start px-md-3">
+              <h3 class="fs-5 fw-semibold mb-1 nome-jogo">Fallout 76</h3>
+              <p class="small mb-1 descricao-lista">RPG, Ação, Multijogador, Pós-apocalíptico</p>
+              <span class="badge bg-secondary col-xl-3 ">Windows</span>
+            </div>
+            <div class="text-center text-md-end mt-2 mt-md-0">
+              <span class="badge bg-success mb-1">-60%</span>
+              <div>
+                <span class="text-decoration-line-through small d-block preco-original">R$ 79,90</span>
+                <span class="fw-bold text-success">R$ 31,96</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-lista d-flex flex-column flex-md-row align-items-center justify-content-between text-decoration-none px-3 py-2 rounded-2"
+            tabindex="0" role="link" aria-label="Call Of Duty: Modern Warfare II - abrir página do jogo">
+            
+            <img src="assets/games/for_honor/for_honor_capsule.jpg"
+              class="img-fluid rounded-1 mb-2 mb-md-0 me-md-3 imagem-lista" />
+            
+            <div class="detalhes-lista flex-grow-1 text-center text-md-start px-md-3">
+              <h3 class="fs-5 fw-semibold mb-1 nome-jogo">For Honor</h3>
+              <p class="small mb-1 descricao-lista">Ação, Luta, Medieval, Multijogador, Tático</p>
+              <span class="badge bg-secondary col-xl-3 ">Windows</span>
+            </div>
+            <div class="text-center text-md-end mt-2 mt-md-0">
+              <span class="badge bg-success mb-1">-75%</span>
+              <div>
+                <span class="text-decoration-line-through small d-block preco-original">R$ 89,90</span>
+                <span class="fw-bold text-success">R$ 89,90</span>
+              </div>
+            </div>
+          </article>
+
+          
         </div>
       </section>
 
@@ -338,10 +397,10 @@
 
               <a href="#topo" class="d-inline-flex align-items-center mb-3 text-decoration-none" aria-label="Página inicial da Iara Games">
                 <img src="./assets/LogoOficial.png" alt="Logotipo da Iara Games" class="img-fluid me-2" width="40" height="40" />
-                <span class="fs-5 fw-semibold">Iara Games</span>
+                <span class="fs-5 fw-semibold texto-footer">Iara Games</span>
               </a>
 
-              <p class="mb-2">Jogos que conectam pessoas</p>
+              <p class="mb-2 texto-footer">Jogos que conectam pessoas</p>
 
               <address class="small text-secondary mb-0">
                 <a href="email:contato@iaragames.com" class="link-opacity-75-hover d-block link">contato@iaragames.com</a>
@@ -354,7 +413,7 @@
 
             <!-- Navegação: Empresa -->
             <div class="col-6 col-md-2">
-              <h6 class="text-uppercase small mb-3">Empresa</h6>
+              <h6 class="text-uppercase small mb-3 texto-footer">Empresa</h6>
               <ul class="list-unstyled mb-0">
                 <li><a class="link-opacity-75-hover link" href="">Sobre</a></li>
                 <li><a class="link-opacity-75-hover link" href="">Carreiras</a></li>
@@ -363,11 +422,11 @@
 
             <!-- Navegação: Suporte -->
             <div class="col-6 col-md-2">
-              <h6 class="text-uppercase small mb-3">Suporte</h6>
+              <h6 class="text-uppercase small mb-3 texto-footer">Suporte</h6>
               <ul class="list-unstyled mb-0">
-                <li><a class="link-opacity-75-hover link" href="/ajuda">Ajuda</a></li>
-                <li><a class="link-opacity-75-hover link" href="/faq">FAQ</a></li>
-                <li><a class="link-opacity-75-hover link" href="/contato">Contato</a></li>
+                <li><a class="link-opacity-75-hover link" href="./pages/suporte.html">Ajuda</a></li>
+                <li><a class="link-opacity-75-hover link" href="./pages/suporte.html">FAQ</a></li>
+                <li><a class="link-opacity-75-hover link" href="./pages/suporte.html">Contato</a></li>
               </ul>
             </div>
           </div>
@@ -398,12 +457,13 @@
          -------------------------- -->
     <div id="a11y-floating" class="a11y-floating" aria-hidden="true">
       <div id="a11y-panel" class="a11y-panel" role="dialog" aria-modal="true" aria-label="Painel de Acessibilidade">
-        <div class="a11y-header">
-          <h3 class="a11y-title">Acessibilidade</h3>
+        
+        <div class="a11y-header mb-1 p-1">
+          <h3 class="fs-6 a11y-title">Acessibilidade</h3>
           <button id="a11y-close" class="a11y-close-btn" aria-label="Fechar painel de acessibilidade">X</button>
         </div>
 
-        <div class="a11y-section">
+        <div class="fs-6 a11y-section">
           <strong>Tamanho do Texto</strong>
           <div class="a11y-controls">
             <button class="a11y-btn text-size" data-size="normal">Texto Normal</button>
@@ -412,7 +472,7 @@
           </div>
         </div>
 
-        <div class="a11y-section">
+        <div class="fs-6 a11y-section">
           <strong>Visual</strong>
           <div class="a11y-controls">
             <button class="a11y-btn visual" data-visual="claro">Visual Claro</button>
@@ -422,7 +482,7 @@
           </div>
         </div>
 
-        <div class="a11y-section">
+        <div class="fs-6 a11y-section">
           <strong>Fonte</strong>
           <div class="a11y-controls">
             <button class="a11y-btn font-switch" data-font="inter">Inter</button>
@@ -432,11 +492,10 @@
           </div>
         </div>
 
-        <div class="a11y-section">
+        <div class="fs-6 a11y-section">
           <strong>Leitor de Tela</strong>
           <div class="a11y-controls">
             <button id="toggle-hover-reader" class="a11y-btn" aria-pressed="false">Leitura por Hover: Off</button>
-            <small class="a11y-note">Segure o mouse sobre um elemento por 1s</small>
           </div>
         </div>
 
